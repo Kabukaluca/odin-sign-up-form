@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignUp form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="form_header">
+        <h1>Sign Up</h1>
+        <p>This is not a real online service. 
+        <br>But you know you <em>want</em> to sign up for it.</p>
+    </header>
+        <form action="#" method="get" class="sign_up_form">
+
+            <div class="form_row">
+                <label for="fname">Name:</label>
+                <input type="text" name="fname" id="fname" placeholder="Luke" minlength="2">
+            </div>
+
+            <div class="form_row">
+                <label for="lname">Last Name:</label>
+                <input type="text" name="lname" id="lname" placeholder="Skywalker" minlength="2">
+            </div>
+
+            <div class="form_row">
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email" placeholder="luke@skywalker.com">
+            </div>
+
+            <div class="form_row">
+                <label for="tel">Phone Number:</label>
+                <input type="tel" name="tel" id="tel" placeholder="+4912345678900">
+            </div>
+
+            <div class="form_row">
+                <label for="pwd">Password:</label>
+                <input type="password" name="pwd" id="pwd" minlength="8" placeholder="Enter password">
+            </div>
+
+            <div class="form_row">
+                <label for="pwd">Repeat Password:</label>
+                <input type="password" name="pwd" id="pwd" minlength="8" placeholder="Repeat password">
+            </div>
+        </form>
+        
+        <div class="form_footer">
+            <div class="button_container">
+                <button type="submit">Create Account</button>
+            </div>
+
+            <div class="form_sub">
+                <p>Already have an account?<em> <a href="">Log in</a></em></p>
+            </div>
+        </div>
+    
+</body>
+</html>
