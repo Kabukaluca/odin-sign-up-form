@@ -7,53 +7,78 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header class="form_header">
-        <h1>Sign Up</h1>
-        <p>This is not a real online service. 
-        <br>But you know you <em>want</em> to sign up for it.</p>
-    </header>
-        <form action="#" method="get" class="sign_up_form">
-
-            <div class="form_row">
-                <label for="fname">Name:</label>
-                <input type="text" name="fname" id="fname" placeholder="Luke" minlength="2">
-            </div>
-
-            <div class="form_row">
-                <label for="lname">Last Name:</label>
-                <input type="text" name="lname" id="lname" placeholder="Skywalker" minlength="2">
-            </div>
-
-            <div class="form_row">
-                <label for="email">Email:</label>
-                <input type="email" name="email" id="email" placeholder="luke@skywalker.com">
-            </div>
-
-            <div class="form_row">
-                <label for="tel">Phone Number:</label>
-                <input type="tel" name="tel" id="tel" placeholder="+4912345678900">
-            </div>
-
-            <div class="form_row">
-                <label for="pwd">Password:</label>
-                <input type="password" name="pwd" id="pwd" minlength="8" placeholder="Enter password">
-            </div>
-
-            <div class="form_row">
-                <label for="pwd">Repeat Password:</label>
-                <input type="password" name="pwd" id="pwd" minlength="8" placeholder="Repeat password">
-            </div>
-        </form>
-        
-        <div class="form_footer">
-            <div class="button_container">
-                <button type="submit">Create Account</button>
-            </div>
-
-            <div class="form_sub">
-                <p>Already have an account?<em> <a href="">Log in</a></em></p>
+    <div class="left">
+        <div class="logo_container">
+            <img src="img/odin-lined.png" alt="The Odin Project Logo">
+            <div class="left_headers">
+                <h1>Learn and Create.</h1>
+                <h3>The Odin Project</h3>
             </div>
         </div>
-    
+    </div>
+
+    <div class="form_container">
+        <header class="form_header">
+            <h1>Sign Up</h1>
+            <p>This is not a real online service.
+            <br>But you know you <em>want</em> to sign up for it.</p>
+        </header>
+            <form action="#" method="get" class="sign_up_form">
+                <div class="form_block">
+                    <div class="form_row">
+                        <label for="fname">Name:</label>
+                        <input type="text" name="fname" id="fname" placeholder="Luke *" minlength="2" required>
+                    </div>
+                    <div class="form_row">
+                        <label for="lname">Last Name:</label>
+                        <input type="text" name="lname" id="lname" placeholder="Skywalker *" minlength="2" required>
+                    </div>
+                </div>
+                <div class="form_block">
+                    <div class="form_row">
+                        <label for="email">Email:</label>
+                        <input type="email" name="email" id="email" placeholder="luke@skywalker.com *" required>
+                    </div>
+                    <div class="form_row">
+                        <label for="tel">Phone Number:</label>
+                        <input type="tel" name="tel" id="tel" placeholder="+4912345678900">
+                    </div>
+                </div>
+                <div class="form_block">
+                    <div class="form_row">
+                        <label for="pwd">Password:</label>
+                        <input type="password" name="pwd" id="pwd" minlength="8" placeholder="Enter password *" required>
+                    </div>
+                    <div class="form_row">
+                        <label for="pwd">Repeat Password:</label>
+                        <input type="password" name="pwd" id="pwd" minlength="8" placeholder="Repeat password *" required>
+                    </div>
+                </div>
+                <div class="form_row">
+                    <label for="newsletter" class="checkbox_label">
+                        <input type="checkbox" name="newsletter" id="newsletter" checked>
+                        <span>I want to recieve news per email</span>
+                    </label>
+                </div>
+                <div class="form_row">
+                    <label for="terms" class="checkbox_label">
+                        <input type="checkbox" name="terms"  id="terms" required>
+                        <span>I've read and accept the <a href="">Terms and Conditions</a></span>
+                    </label>
+                </div>
+                <div class="button_container">
+                    <button type="submit">Create Account</button>
+                </div>
+            </form>
+        
+            <div class="form_footer">
+                <div class="form_sub">
+                    <p>Already have an account?<em> <a href="">Log in</a></em></p>
+                </div>
+            </div>
+            <div class="img_credits">
+                <p>Photo by Mario Dobelmann on <a href="https://unsplash.com/photos/etiCf-2QuXY">Unsplash</a></p>
+            </div>
+    </div>
 </body>
 </html>
