@@ -99,7 +99,7 @@ body {
 }
 
 .form_row {
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     display: flex;
     justify-content: flex-start;
     flex-direction: column;
@@ -161,6 +161,12 @@ body {
 .form_row input[type="tel"]::-webkit-input-placeholder,
 .form_row input[type="password"]::-webkit-input-placeholder {
     color: rgba(255, 255, 255, 0.5);
+}
+
+.error {
+    font-size: 12px;
+    color: #b92326;
+    margin-top: 4px;
 }
 
 .form_row .checkbox_label {
@@ -341,8 +347,7 @@ body {
 
             border: none;
             border-radius: 3px;
-            width: 100%;
-            
+            width: 100%; 
         }
 
         .form_row .checkbox_label {
