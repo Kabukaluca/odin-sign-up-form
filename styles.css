@@ -5,7 +5,7 @@
 }
 
 body {
-
+    height: 100vh;
     background:
     linear-gradient(
       rgba(0, 0, 0, 0.15), 
@@ -148,12 +148,14 @@ body {
     background-color: rgba(139, 195, 74, 0.25)
 }
 
-.form_row input[type="text"]:not(:placeholder-shown):focus:valid,
-.form_row input[type="email"]:not(:placeholder-shown):focus:valid,
-.form_row input[type="tel"]:not(:placeholder-shown):focus:valid,
-.form_row input[type="password"]:not(:placeholder-shown):focus:valid {
+#form .form_block .form_row input.valid-input {
     border: 1px solid #8BC34A;
-    background-color: rgba(139, 195, 74, 0.25)
+    background-color: rgba(139, 195, 74, 0.25);
+}
+
+#form .form_block .form_row input.invalid-input {
+    border: 1px solid #b92326;
+    background-color: rgba(185, 35, 38, 0.25);
 }
 
 .form_row input[type="text"]::-webkit-input-placeholder,
@@ -161,13 +163,27 @@ body {
 .form_row input[type="tel"]::-webkit-input-placeholder,
 .form_row input[type="password"]::-webkit-input-placeholder {
     color: rgba(255, 255, 255, 0.5);
-}
+} 
 
 .error {
     font-size: 12px;
     color: #b92326;
     margin-top: 4px;
 }
+
+.terms_error {
+    font-size: 12px;
+    color: #b92326;
+    margin-top: -5px;
+}
+
+.terms_error_highlight {
+    border-radius: 3px;
+    border: 1px solid #b92326;
+    background-color: rgba(185, 35, 38, 0.25);
+}
+
+.terms
 
 .form_row .checkbox_label {
     font-size: 16px;
@@ -280,7 +296,6 @@ body {
             width: 140px;
         }
 
-
         body {
             display: flex;
             flex-direction: row;
@@ -335,6 +350,7 @@ body {
 
         .form_row {
             margin-top: 20px;
+            width: 100%;
         }
 
         .form_row input[type="text"],
@@ -355,6 +371,12 @@ body {
             margin-bottom: -30px;
         }
 
+        .terms_error {
+            font-size: 12px;
+            color: #b92326;
+            margin-top: 35px;
+        }
+
         .button_container {
             text-align: center;
             margin-top: 50px;
@@ -366,7 +388,7 @@ body {
 
         .form_footer {
             margin-bottom: 0;
-            padding-bottom: 30px;
+            padding-bottom: 0;
 
             width: 80%;
         }
@@ -379,7 +401,7 @@ body {
             text-align: center;
             font-size: 8px;
             width: 80%;
-            margin: 0;
+            margin-top: auto;
         }
         
         .img_credits a {

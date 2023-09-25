@@ -39,13 +39,13 @@
                 </div>
                 <div class="form_block">
                     <div class="form_row">
-                        <label for="email">Email</label>
-                        <input type="email" name="email" id="email" placeholder="luke@skywalker.com *" required>
+                        <label for="email">Email Address</label>
+                        <input type="email" name="email" id="email" pattern="^(.+)@(.+).(.+)$" placeholder="luke@skywalker.com *" required>
                         <div class="error"></div>
                     </div>
                     <div class="form_row">
                         <label for="tel">Phone Number</label>
-                        <input type="tel" name="tel" id="tel" placeholder="+4912345678900" pattern="[0-9]+" minlength="8">
+                        <input type="tel" name="tel" id="tel" placeholder="+4912345678900" pattern="[0-9]+">
                         <div class="error"></div>
                     </div>
                 </div>
@@ -56,8 +56,8 @@
                         <div class="error"></div>
                     </div>
                     <div class="form_row">
-                        <label for="pwd">Repeat Password</label>
-                        <input type="password" name="pwd" id="pwd_confirm" minlength="8" placeholder="Repeat password *" required>
+                        <label for="pwd">Confirm Password</label>
+                        <input type="password" name="pwd" id="pwd_confirm" minlength="8" match="pwd" placeholder="Confirm password *" required>
                         <div class="error"></div>
                     </div>
                 </div>
@@ -66,12 +66,14 @@
                         <input type="checkbox" name="newsletter" id="newsletter" checked>
                         <span>I want to recieve news per email</span>
                     </label>
+                    <div class="error"></div>
                 </div>
                 <div class="form_row">
-                    <label for="terms" class="checkbox_label">
-                        <input type="checkbox" name="terms"  id="terms" required>
-                        <span>I agree to the <a href="">Terms of use</a></span>
+                    <label for="terms" class="checkbox_label terms_label">
+                        <input type="checkbox" name="terms"  id="terms" required unchecked>
+                        <span class="terms-text">I have read and agree to the <a href="">Terms and Conditions</a></span>
                     </label>
+                    <div class="terms_error"></div>
                 </div>
                 <div class="button_container">
                     <button type="submit">Create Account</button>
